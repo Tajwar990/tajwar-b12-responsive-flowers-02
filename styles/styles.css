@@ -1,0 +1,109 @@
+/** font family for inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/** font family for Noto serif */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* common css starts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inter-fonts {
+  font-family: "Inter", sans-serif;
+
+}
+
+.noto-serif-fonts {
+  font-family: "Noto Serif", serif;
+}
+
+.center {
+  max-width: 1140px;
+  margin: 0 auto;
+  background: rgb(245, 248, 255);
+}
+
+.font-basic {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/** common css ends */
+
+/** navigation bar css starts */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 135px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 49px;
+}
+
+.link-container a {
+  margin-right: 48px;
+  text-decoration: none;
+}
+
+.link-container a:last-child {
+  margin-right: 0;
+}
+
+.nav-links-one {
+  color: rgb(37, 36, 50);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.nav-links-two {
+  color: rgb(137, 135, 161);
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-logo {
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+  font-size: 22px;
+}
+
+.cart-title {
+  color: rgb(0, 0, 0);
+}
+
+/** navigation bar css starts */
+
+
+
+
+
+/** responsive media query for mobile */
+
+@media screen and (max-width: 576px) {
+  .link-container > div:first-child {
+    display: none;
+  }
+}
