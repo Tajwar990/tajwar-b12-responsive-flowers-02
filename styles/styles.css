@@ -23,7 +23,10 @@
 .center {
   max-width: 1140px;
   margin: 0 auto;
-  background: rgb(245, 248, 255);
+}
+
+.body-color {
+  background-color: rgb(245, 248, 255);
 }
 
 .font-basic {
@@ -94,16 +97,83 @@
   color: rgb(0, 0, 0);
 }
 
-/** navigation bar css starts */
+/** navigation bar css ends */
 
+/** banner part css starts */
 
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.banner-text {
+  width: 50%;
+}
+
+.banner-title {
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.banner-title span {
+  color: rgb(233, 90, 8);
+}
+
+.banner-description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  font-weight: 400;
+  padding-top: 13px;
+}
+
+.banner-img {
+  width: 50%;
+}
+
+.banner-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/** banner part css ends */
 
 
 
 /** responsive media query for mobile */
 
 @media screen and (max-width: 576px) {
-  .link-container > div:first-child {
+
+  /** navbar */
+
+  .link-container>div:first-child {
     display: none;
   }
+
+  /** banner */
+
+  .banner-container {
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+
+  .banner-text {
+    width: 100%;
+  }
+
+  .banner-title {
+    font-size: 24px;
+  }
+
+  .banner-description {
+    font-size: 14px;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+
 }
