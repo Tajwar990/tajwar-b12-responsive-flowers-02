@@ -366,6 +366,59 @@
 
 /** latest deal section ends */
 
+/** join section starts */
+
+.form-container {
+  border: 2px solid red;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(7, 51, 79, 0.4)), url('../assets/news-letter-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 533px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.form-container h1 {
+  color: rgb(255, 255, 255);
+  font-family: Noto Serif;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+
+.Join-form input[type="email"] {
+  width: 644px;
+  height: 50px;
+  padding: 8px 20px 8px 20px;
+  border: none;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  gap: 0;
+}
+
+.Join-form button {
+  width: 186px;
+  height: 50px;
+  padding: 8px 20px 8px 20px;
+  border: none;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgb(233, 90, 8);
+}
+
+/** join section ends */
+
 
 
 /** responsive media query for mobile */
@@ -524,6 +577,16 @@
     left: 50%;
     font-size: 25px;
     transform: translateX(-50%);
+  }
+
+  /** join form starts */
+
+  .Join-form input[type="email"] {
+    width: 218px;
+  }
+
+  .Join-form button {
+    width: 103px;
   }
 
 }
